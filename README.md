@@ -114,9 +114,6 @@ to load the R package. It is possible that the following warning in the R sessio
       UserWarning: Cannot find FastRGF executable files. FastRGF estimators will be unavailable for usage.
       warnings.warn("Cannot find FastRGF executable files. FastRGF estimators will be unavailable for usage.")
   
-
-
-
 Windows OS
 
     NOTE : CURRENTLY THE PACKAGE ON WINDOWS CAN BE USED ONLY FROM THE COMMAND LINE (cmd)
@@ -162,7 +159,7 @@ Perform the following steps to upgrade the MinGW (so that simple RGF functions w
 
 Normally MinGW is installed in the C:\ directory. So, first delete the folder C:\MinGW (if it already exists), and then remove the environment variable from (Control Panel >> System and Security >> System >> Advanced system settings >> Environment variables >> System variables >> Path >> Edit) which usually is C:\MinGW\bin. Then download the most recent version of MinGW, and especially the mingw-get-setup.exe which is an automated GUI installer assistant. After the new version is installed successfully, update the environment variable by adding C:\MinGW\bin in (Control Panel >> System and Security >> System >> Advanced system settings >> Environment variables >> System variables >> Path >> Edit). Then open a new command prompt (console) and type,
 
-gcc --version
+        gcc --version
 
 
 to find out if the new version of MinGW is installed properly.
@@ -263,7 +260,7 @@ To launch Python and then type
 
 To observe if rgf is installed properly. Then continue with the installation of the RGF package,
 
-install.packages(RGF)
+        install.packages(RGF)
 
 
 On windows the user can take advantage of the RGF package currently only from within the command prompt (console). First, find the full path of the installation location of R (possible if someone right-clicks in the R short-cut (probably on Desktop) and navigates to properties >> shortcut >> target). In case, for instance, that R is located in C:\Program Files\R\R-3.4.0\bin\x64\R, then, by opening a command prompt (console) and giving,
@@ -281,5 +278,5 @@ Installation of the RGF package
 
 To install the package from CRAN use,
 
-install.packages('RGF')
+        install.packages('RGF')
 
